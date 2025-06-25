@@ -8,9 +8,12 @@ function Navbar() {
         <Mobile />
       </div>
       <div className="hidden md:flex gap-8 py-5 px-10">
-        <span className="cursor-pointer text-white underline-offset-4 hover:underline">
+        <Link
+          href={"/"}
+          className="cursor-pointer text-white underline-offset-4 hover:underline"
+        >
           Início
-        </span>
+        </Link>
         <span className=" cursor-pointer text-white underline-offset-4 hover:underline">
           Preview
         </span>

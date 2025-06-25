@@ -1,13 +1,13 @@
 // app/login/action.ts
 "use server";
 
-import { loginSchema } from "@/schemas/login.schema";
-import { redirect } from "next/navigation";
+import { LoginFormData, loginSchema } from "@/schemas/login.schema";
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
-export async function loginAction(formData: FormData) {
-    const email = formData.get("email");
-    const password = formData.get("password");
+export async function loginAction(formData: LoginFormData) {
+    const email = formData.email;
+    const password = formData.password;
 
     const parsed = loginSchema.safeParse({ email, password });
 
