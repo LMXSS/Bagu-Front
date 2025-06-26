@@ -1,6 +1,11 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Link from "next/link";
 
-function Mobile() {
+type Props = {
+  routes: { path: string; label: string }[];
+};
+
+function Mobile({ routes }: Props) {
   return (
     <Sheet>
       <SheetTrigger className="bg-transparent">
@@ -25,20 +30,17 @@ function Mobile() {
           />
         </svg>
       </SheetTrigger>
-      <SheetContent className="bg-black text-white">
+      <SheetContent className="bg-black text-white" side="left">
         <div className="flex flex-col gap-8 py-5 px-10">
-          <span className="cursor-pointer text-white underline-offset-4 hover:underline">
-            Início
-          </span>
-          <span className=" cursor-pointer text-white underline-offset-4 hover:underline">
-            Feed
-          </span>
-          <span className=" cursor-pointer text-white underline-offset-4 hover:underline">
-            Conteúdo Exclusivo
-          </span>
-          <span className=" cursor-pointer text-white underline-offset-4 hover:underline">
-            Contato
-          </span>
+          {routes.map((route) => (
+            <Link
+              key={route.path}
+              href={route.path}
+              className="cursor-pointer text-white underline-offset-4 hover:underline"
+            >
+              {route.label}
+            </Link>
+          ))}
         </div>
       </SheetContent>
     </Sheet>

@@ -1,4 +1,4 @@
-import Navbar from "@/components/home/sections/navbar";
+import Navbar from "@/components/common/navbar";
 import LoginForm from "@/components/login/loginForm";
 
 function Login() {

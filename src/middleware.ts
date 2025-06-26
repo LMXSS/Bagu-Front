@@ -3,11 +3,11 @@ import type { NextRequest } from "next/server";
 
 const publicRoutes = ["/", "/auth/login", "/register"];
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
     const token = request.cookies.get("token")?.value;
     const pathname = request.nextUrl.pathname;
 
-    console.log("Testando middleware");
+    console.log(token)
 
     const isPublicRoute = publicRoutes.includes(pathname);
 

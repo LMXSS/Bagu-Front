@@ -75,20 +75,19 @@ const items = [
     height: 600,
   },
 ];
-export default function FeedPage() {
+export default function MyCollectionPage() {
   return (
     <>
-      <h1 className="text-3xl font-bold text-center mb-10">Feed</h1>
       <Masonry
         items={items}
         ease="power3.out"
         duration={0.6}
         stagger={0.0}
-        animateFrom="bottom"
+        animateFrom="left"
         scaleOnHover={true}
         hoverScale={0.95}
         blurToFocus={true}
-        colorShiftOnHover={true}
+        colorShiftOnHover={false}
       />
     </>
   );
