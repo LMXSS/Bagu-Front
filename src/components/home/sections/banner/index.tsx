@@ -8,7 +8,7 @@ function Banner() {
     <div
       style={{
         // backgroundColor: darkTheme.backgroundHeader,
-        backgroundImage: "url('./images/banner.jpg')",
+        backgroundImage: "url('./images/banner.webp')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
@@ -64,19 +64,9 @@ function Banner() {
               padding: "20px 40px",
               background: darkTheme.bgButton,
             }}
+            className="text-white cursor-pointer"
           >
-            ✨ Assine Agora
-          </Button>
-          <Button
-            style={{
-              borderRadius: 30,
-              padding: "20px 30px",
-              border: "2px solid #ecd6fa",
-              backgroundColor: darkTheme.foregroundSecondary,
-              color: "white",
-            }}
-          >
-            Ver Prévias
+            Crie sua conta e veja mais
           </Button>
         </div>
       </div>

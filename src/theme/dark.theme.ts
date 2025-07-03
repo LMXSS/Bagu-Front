@@ -6,6 +6,6 @@ export const darkTheme = {
     card: "#babbda",
     primary: "",
     secondary: "",
-    bgButton: "linear-gradient(90deg, #7e2548 0%, rgba(255, 78, 147, 1) 100%)",
+    bgButton: "linear-gradient(90deg, #37241b 0%, #774d37 50%, #37241b 100%)",
     textButton: ""
 }

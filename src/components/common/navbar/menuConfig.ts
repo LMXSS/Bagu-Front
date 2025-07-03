@@ -5,8 +5,7 @@ export const publicMenuConfig = [
 ];
 
 export const privateMenuConfig = [
-    { label: "Feed", path: "/private/feed" },
-    { label: "Minha Coleção", path: "/private/collection" },
-    { label: "Coleção Especial", path: "/private/special-collection" },
-    { label: "Contato", path: "/private/contact" },
+    { label: "Fotos e Vídeos", path: "/private/feed" },
+    { label: "Live", path: "/private/collection" },
+    { label: "Conteúdo Exclusivo", path: "/private/special-collection" },
 ];
